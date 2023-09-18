@@ -17,6 +17,7 @@ public class Main {
         System.out.println("Students name is: " + anders.name);
         System.out.println("Students age is: " + anders.age);
         System.out.println(jonas.doubleMyage());
+        System.out.println("Is that the first COMMIT");
 
         Random randomAge = new Random();
         String[] name = {"Lisa", "Roni", "Jonas", "Ali", "Jakob"};
