@@ -1,17 +1,30 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+package com.siyar.models;
+
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Student jonas = new Student("Jonas", 15);
+        Student alicia = new Student("Alicia", 20);
+        Student ali = new Student("Ali", 25);
+        Student anders = new Student("Anders", 20);
+        System.out.println("Students name is: " + jonas.name);
+        System.out.println("Students age is: " + jonas.age);
+        System.out.println("Students name is: " + alicia.name);
+        System.out.println("Students age is: " + alicia.age);
+        System.out.println("Students name is: " + ali.name);
+        System.out.println("Students age is: " + ali.age);
+        System.out.println("Students name is: " + anders.name);
+        System.out.println("Students age is: " + anders.age);
+        System.out.println(jonas.doubleMyage());
 
-        // Press Skift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        Random randomAge = new Random();
+        String[] name = {"Lisa", "Roni", "Jonas", "Ali", "Jakob"};
 
-            // Press Skift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        for (int i = 0; i < 5; i++) {
+            Student student = new Student(name[i], randomAge.nextInt(43) + 25); // Generate a random age between 25 and 67
+            System.out.println(student.name + " " + student.age);
         }
+
     }
 }

@@ -1,2 +1,23 @@
-package Models;public class Student {
+package Models;
+
+public class Student {
+    String name;
+    int age;
+
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+
+
+    public int doubleMyage()
+
+    {
+
+        System.out.println();
+        return age * 2;
+    }
+
+
 }
